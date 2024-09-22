@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat&family=Ubuntu&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/css/contacts-style.css" />
+    <title>Contacts</title>
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">
+        <img src="/src/img/Logo.png" alt="" />
+      </label>
+      <ul>
+        <li><a href="/index.html">Home Page</a></li>
+        <li><a href="/src/html/events.html">Events</a></li>
+        <li><a href="/src/html/price-list.html">Price List</a></li>
+        <li><a href="/src/html/about-us.html">About Us</a></li>
+        <li><a class="active" href="/src/html/contacts.html">Contacts</a></li>
+      </ul>
+    </nav>
+
+    <div class="title">
+      <h1>Contact Us Here!</h1>
+    </div>
+<!--Janlup validasi-->
+    <section class="contact-section">
+      <form class="contact-form" onsubmit="return validateForm()">
+        <div class="form-group">
+          <label for="name"><i class="fas fa-user"></i></label>
+          <input type="text" id="name" name="name" placeholder="*Name" required />
+        </div>
+        <div class="form-group">
+          <label for="email"><i class="fas fa-envelope"></i></label>
+          <input type="email" id="email" name="email" placeholder="*Gmail" required />
+        </div>
+        <div class="form-group">
+          <label for="phone"><i class="fas fa-phone"></i></label>
+          <input type="tel" id="phone" name="phone" placeholder="*Phone Number +62" required />
+        </div>
+        <div class="form-group">
+          <label for="message"></label>
+          <textarea id="message" name="message" placeholder="Message..." required></textarea>
+        </div>
+        <p class="preferred">Your preferred way of contact:</p>
+        <div class="form-group">
+          <div class="contact-preference">
+            <input type="radio" id="phone-contact" name="contact-preference" value="phone" checked />
+            <label for="phone-contact"> Phone</label>
+    
+            <input type="radio" id="email-contact" name="contact-preference" value="email" />
+            <label for="email-contact"> Email</label>
+          </div>
+        </div>
+        <button type="submit">Send ></button>
+        <p class="contact-message">We will contact you back soon!</p>
+      </form>
+    </section>
+
+    <footer>
+      <div class="footer-left">
+        <img src="/src/img/Logo-transparan.png" alt="Logo" />
+        <p>Delivering our best for your various purposes!</p>
+      </div>
+      <div class="footer-middle">
+        <h3>Follow Us</h3>
+        <ul class="social-media">
+          <li>
+            <a href="#"><i class="fab fa-instagram"></i> @JockeyConvention</a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-twitter"></i> Jockey Convention</a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-facebook"></i> Jockey Convention</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-right">
+        <h3>Contact Us</h3>
+        <ul class="contact-info">
+          <li><i class="fas fa-phone"></i> 0804-123-1110</li>
+          <li><i class="fas fa-envelope"></i> Jockeyconvention@gmail.com</li>
+          <li><i class="fab fa-whatsapp"></i> +62-0811-456-4539</li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="/src/js/slider.js"></script>
+  </body>
+</html>

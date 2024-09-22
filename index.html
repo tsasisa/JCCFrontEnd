@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat&family=Ubuntu&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <title>Home Page</title>
+  </head>
+  
+  <body>
+    <nav>
+      <!--mobile-->
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">
+        <img src="/src/img/Logo.png" alt="" />
+      </label>
+      <ul>
+        <li><a class="active" href="/index.html">Home Page</a></li>
+        <li><a href="/src/html/events.html">Events</a></li>
+        <li><a href="/src/html/price-list.html">Price List</a></li>
+        <li><a href="/src/html/about-us.html">About Us</a></li>
+        <li><a href="/src/html/contacts.html">Contacts</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero-section">
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="/src/img/homepage/dsc9565-e1502125797788.webp" style="width: 100%" />
+        </div>
+        <div class="mySlides fade">
+          <img src="/src/img/homepage/sljco1.jpg" style="width: 100%" />
+        </div>
+        <div class="mySlides fade">
+          <img src="/src/img/homepage/ART-EXHIBITION-HERO_.jpg" style="width: 100%" />
+        </div>
+        <div class="mySlides fade">
+          <img src="/src/img/homepage/2000x1000-Conference-2016.jpg" style="width: 100%" />
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+      </div>
+      <br />
+    </div>
+
+    <div class="welcome-section">
+      <div class="title">
+        <h2>Welcome to</h2>
+        <h1>Jockey's Conference Center</h1>
+      </div>
+      <div class="text">
+        <div>
+          Since 1974, we have been established as one of the earliest and iconic convention center in Jakarta. JCC has been the venue for prestigious gatherings such as the 11th Non-Aligned Movement Conference and the Asian-African
+          Conference. Our facilities and services have attracted a diverse range of events, making it a sought-after destination throughout the year.
+        </div>
+      </div>
+    </div>
+
+    <div class="content-section">
+      <div class="title-content">
+        <div>Check Out Our Upcoming Events!</div>
+      </div>
+
+      <div class="logo-img">
+        <img src="/src/img/Logo.png" alt="" />
+      </div>
+
+      <div class="container-img-content">
+        <div class="img-content">
+          <img src="/src/img/homepage/claire-comms-2_1100--0-300-3456-1703.jpg" alt="" />
+          <div>13-06-2023</div>
+        </div>
+      </div>
+
+      <div class="title-section-content">
+        <div>Marley's Architectural Exhibition</div>
+      </div>
+
+      <div class="text-section-content">
+        <div>Join us in this one of a kind worldwide architectural exhibition which are directly approved by Marley Harvey, world's recognized architect.</div>
+      </div>
+    </div>
+
+    <div class="content-section">
+      <div class="logo-img">
+        <img src="/src/img/Logo.png" alt="" />
+      </div>
+
+      <div class="container-img-content">
+        <div class="img-content">
+          <img src="/src/img/homepage/sljco1.jpg" alt="" />
+          <div>27-06-2023</div>
+        </div>
+      </div>
+
+      <div class="title-section-content">
+        <div>Light Pigeon Medley Premier</div>
+      </div>
+
+      <div class="text-section-content">
+        <div>Jessica Lu, one of Asian most unique composer has released her first medley. Come and join us to be one of the first audience to spectate these grand pieces.</div>
+      </div>
+    </div>
+
+    <div class="button-container">
+      <a href="/src/html/events.html">
+      <button class="see-more">See More <span class="arrow"></span></button>
+      </a>
+    </div>
+
+
+    <footer>
+      <div class="footer-left">
+        <img src="/src/img/Logo-transparan.png" alt="Logo" />
+        <p>Delivering our best for your various purposes!</p>
+      </div>
+      <div class="footer-middle">
+        <h3>Follow Us</h3>
+        <ul class="social-media">
+          <li>
+            <a href="#"><i class="fab fa-instagram"></i> @JockeyConvention</a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-twitter"></i> Jockey Convention</a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-facebook"></i> Jockey Convention</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-right">
+        <h3>Contact Us</h3>
+        <ul class="contact-info">
+          <li><i class="fas fa-phone"></i> 0804-123-1110</li>
+          <li><i class="fas fa-envelope"></i> Jockeyconvention@gmail.com</li>
+          <li><i class="fab fa-whatsapp"></i> +62-0811-456-4539</li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="/src/js/slider.js"></script>
+  </body>
+</html>
